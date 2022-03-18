@@ -1,0 +1,104 @@
+{
+	"info": {
+		"_postman_id": "4f4f51bd-314d-47fe-86a6-eadcbeceb87d",
+		"name": "Health Portal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All patients",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/patients",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"patients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save patient Details",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"rahul sharma\",\r\n    \"address\":\"N-69, Connaught Place, New Delhi\",\r\n    \"email\":\"a@gmailcom\",\r\n    \"phoneNo\":\"+919393393929\",\r\n    \"password\":\"Zxc82838\",\r\n    \"appointmentDetails\":{\r\n        \"doctorId\":\"1231\",\r\n        \"startTime\":\"2022-01-17T09:24:51.550032\",\r\n        \"endTime\":\"2022-02-18T09:24:51.550032\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/addPatient",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"addPatient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Patient Details",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"2\",\r\n    \"name\":\"paras singh\",\r\n    \"address\":\"B-69, Connaught Place, New Delhi\",\r\n    \"email\":\"p@gmailcom\",\r\n    \"phoneNo\":\"+919393393929\",\r\n    \"password\":\"AsZxc82838212\",\r\n    \"appointmentDetails\":{\r\n        \"doctorId\":\"1231\",\r\n        \"startTime\":\"2020-01-17T09:24:51.550032\",\r\n        \"endTime\":\"2022-02-18T09:24:51.550032\"\r\n    }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/updatePatient",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"updatePatient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete patient Details",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/patient/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"patient",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
