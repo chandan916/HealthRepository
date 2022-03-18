@@ -14,9 +14,11 @@
 - To delete patient details (http://localhost:9090/patient/2)
 
 ## Major Libraries/Framework used
-- log4j -> is used for logging purpose
-- mapstruct -> is used for generating mapper
-- spring-boot-starter-validation -> is used for validation of fields
+- log4j -> is used for logging purpose.
+- mapstruct -> is used for generating mapper.
+- spring-boot-starter-validation -> is used for validation of fields.
+- H2database -> is used as database.
+- JPA -> used foe binding Java objects to records in a relational database.
 
 ## Postman Collection
 - Postman collection is also added for api
