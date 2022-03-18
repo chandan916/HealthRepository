@@ -18,7 +18,7 @@
 - mapstruct -> is used for generating mapper.
 - spring-boot-starter-validation -> is used for validation of fields.
 - H2database -> is used as database.
-- JPA -> used foe binding Java objects to records in a relational database.
+- JPA -> used for binding Java objects to records in a relational database.
 
 ## Postman Collection
 - Postman collection is also added for api
